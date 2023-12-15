@@ -45,7 +45,7 @@
         "token": "GAGO",
         "label": "Arbitrum Goerli Test Network",
         "rpcUrl": "https://goerli-rollup.arbitrum.io/rpc",
-        "graphqlAPIURL" : "http://localhost:8080",
+        "graphqlAPIURL" : "http://localhost:4000",
         "inspectAPIURL":"http://localhost:8080",
         "DAppRelayAddress":"0xF5DE34d6BbC0446E2a45719E718efEbaaE179daE",
         "InputBoxAddress":"0x59b22D57D4f067708AB0c00552767405926dc768",

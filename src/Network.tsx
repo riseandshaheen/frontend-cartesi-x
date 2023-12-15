@@ -31,7 +31,7 @@ export const Network: FC = () => {
             </button>}
             {wallet && (
                 <div>
-                    <label>Switch Chain</label>
+                    <label>Switch Chain: </label>
                     {settingChain ? (
                         <span>Switching chain...</span>
                     ) : (

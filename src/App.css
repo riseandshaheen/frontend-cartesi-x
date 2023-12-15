@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(234, 234, 234);
+    font-family:monospace
+}
+
+.main-container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.inspect-ui {
+    background-color:beige;
+    border-radius: 1ch;
+    border: 3px solid;
+    box-shadow: 5px 10px;
+    padding: 2%;
+}
+
+.input-ui {
+    background-color:beige;
+    border-radius: 1ch;
+    border: 3px solid;
+    box-shadow: 5px 10px;
+    padding: 2%;
+    margin-top: 1.5em;
+}
+
+.reports-ui {
+    background-color:azure;
+    border-radius: 1ch;
+    border: 3px solid;
+    box-shadow: 5px 10px;
+    padding: 2%;
+    margin-top: 1.5em;
+}
+
+.notices-ui {
+    background-color:azure;
+    border-radius: 1ch;
+    border: 3px solid;
+    box-shadow: 5px 10px;
+    padding: 2%;
+    margin-top: 1.5em;
+}
+
+.vouchers-ui {
+    background-color: azure;
+    border-radius: 1ch;
+    border: 3px solid;
+    box-shadow: 5px 10px;
+    padding: 2%;
+    margin-top: 1.5em;
+}
+
+.address-textbox {
+    width:300px;
+}

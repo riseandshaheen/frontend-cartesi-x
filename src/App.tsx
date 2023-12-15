@@ -23,6 +23,7 @@ import { Network } from "./Network";
 import { Vouchers } from "./Vouchers";
 import { Reports } from "./Reports";
 import configFile from "./config.json";
+import "./App.css";
 
 const config: any = configFile;
 
@@ -44,27 +45,38 @@ const App: FC = () => {
     const [dappAddress, setDappAddress] = useState<string>("0x70ac08179605AF2D9e75782b8DEcDD3c22aA4D0C");
 
     return (
-        <div>
+        <div className="main-container">
             <Network />
             <GraphQLProvider>
                 <div>
-                    Dapp Address: <input
+                    Dapp Address: <input 
+                        className="address-textbox"
                         type="text"
                         value={dappAddress}
                         onChange={(e) => setDappAddress(e.target.value)}
                     />
                     <br /><br />
                 </div>
+                <div className="inspect-ui">
                 <h2>Inspect</h2>
                 <Inspect />
+                </div>
+                <div className="input-ui">
                 <h2>Input</h2>
                 <Input dappAddress={dappAddress} />
-                <h2>Reports</h2>
-                <Reports />
-                <h2>Notices</h2>
-                <Notices />
-                <h2>Vouchers</h2>
-                <Vouchers dappAddress={dappAddress} />
+                </div>
+                <div className="reports-ui">
+                    <h2>Reports</h2>
+                    <Reports />
+                </div>
+                <div className="notices-ui">
+                    <h2>Notices</h2>
+                    <Notices />
+                </div>
+                <div className="vouchers-ui">
+                    <h2>Vouchers</h2>
+                    <Vouchers dappAddress={dappAddress} />
+                </div>
             </GraphQLProvider>
         </div>
     );
